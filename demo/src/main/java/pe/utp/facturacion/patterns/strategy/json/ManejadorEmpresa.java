@@ -1,14 +1,34 @@
 package pe.utp.facturacion.patterns.strategy.json;
 
 import pe.utp.facturacion.model.Empresa;
-import pe.utp.facturacion.patterns.strategy.json.ManejadorJsonI;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class ManejadorEmpresa implements ManejadorJsonI<Empresa> {
-    private String RUTA_DEFECTO = "demo\\src\\main\\java\\empresa.json";
+
+    // Método auxiliar para obtener la ruta segura y evitar el crash en el .exe
+    private File obtenerArchivoSeguro(String rutaOpcional) {
+        // Si mandas una ruta por parámetro, la respeta
+        if (rutaOpcional != null && !rutaOpcional.trim().isEmpty()) {
+            return new File(rutaOpcional);
+        }
+
+        // Obtiene la ruta base del usuario de Windows (Ej: C:\Users\TuUsuario)
+        String userHome = System.getProperty("user.home");
+        // Crea una carpeta invisible específica para tu aplicación
+        File directorioApp = new File(userHome, ".SistemaFacturacion");
+
+        // Crea los directorios si no existen
+        if (!directorioApp.exists()) {
+            directorioApp.mkdirs();
+        }
+
+        // Retorna el archivo JSON final en esa ruta segura
+        return new File(directorioApp, "empresa.json");
+    }
 
     @Override
     public Empresa leerArchivoJson(String rutaArchivo) {
@@ -16,37 +36,40 @@ public class ManejadorEmpresa implements ManejadorJsonI<Empresa> {
         System.out.println("[GRASP: Polymorphism] Implementación polimórfica de ManejadorJsonI para Empresa");
         System.out.println("[GRASP: Information Expert] ManejadorEmpresa conoce cómo leer datos de empresa desde JSON");
 
-        try {
-            // Si no se proporciona una ruta, usar la ruta por defecto
-            if (rutaArchivo == null || rutaArchivo.trim().isEmpty()) {
-                rutaArchivo = this.RUTA_DEFECTO;
-            }
+        File archivo = obtenerArchivoSeguro(rutaArchivo);
 
-            // Crear un StringBuilder para almacenar el contenido del archivo
+        // Validación CRUCIAL: Si el archivo no existe, retorna null
+        if (!archivo.exists()) {
+            return null;
+        }
+
+        try {
             StringBuilder jsonContent = new StringBuilder();
             String linea;
 
-            // Leer el archivo línea por línea
-            try (BufferedReader reader = new BufferedReader(new FileReader(rutaArchivo))) {
+            try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
                 while ((linea = reader.readLine()) != null) {
                     jsonContent.append(linea.trim());
                 }
             }
 
-            // Convertir el contenido JSON en un objeto Empresa manualmente
             String json = jsonContent.toString();
+
+            // Prevención de errores si el archivo quedó vacío
+            if (json.isEmpty())
+                return null;
 
             // Eliminar las llaves del inicio y final
             json = json.substring(1, json.length() - 1);
 
-            // Crear una nueva empresa
             Empresa empresa = new Empresa();
 
             // Separar los campos por comas y procesar cada uno
             for (String campo : json.split(",")) {
                 String[] partes = campo.split(":");
-                if (partes.length == 2) {
+                if (partes.length >= 2) {
                     String clave = partes[0].trim().replace("\"", "");
+                    // Unimos el valor de manera más segura por si hay ":" en correos o URLs
                     String valor = partes[1].trim().replace("\"", "");
 
                     switch (clave) {
@@ -103,11 +126,9 @@ public class ManejadorEmpresa implements ManejadorJsonI<Empresa> {
 
     @Override
     public void escribirArchivoJson(Empresa empresa, String rutaArchivo) {
-        String ruta = (rutaArchivo == null || rutaArchivo.trim().isEmpty())
-                ? RUTA_DEFECTO
-                : rutaArchivo;
+        File archivo = obtenerArchivoSeguro(rutaArchivo);
 
-        // Construir JSON manualmente (temporal, hasta usar Gson)
+        // Construir JSON manualmente respetando tu estructura
         StringBuilder json = new StringBuilder();
         json.append("{\n")
                 .append("  \"nombre\": \"").append(escapeJson(empresa.getNombre())).append("\",\n")
@@ -120,10 +141,11 @@ public class ManejadorEmpresa implements ManejadorJsonI<Empresa> {
                 .append("  \"descripcion\": \"").append(escapeJson(empresa.getDescripcion())).append("\"\n")
                 .append("}");
 
-        try (FileWriter writer = new FileWriter(ruta)) {
+        try (FileWriter writer = new FileWriter(archivo)) {
             writer.write(json.toString());
         } catch (IOException e) {
-            throw new RuntimeException("Error al escribir el archivo JSON de empresa", e);
+            throw new RuntimeException("Error al escribir el archivo JSON de empresa en: " + archivo.getAbsolutePath(),
+                    e);
         }
     }
 

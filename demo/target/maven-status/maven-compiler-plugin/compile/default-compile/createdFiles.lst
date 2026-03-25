@@ -21,6 +21,7 @@ pe\utp\facturacion\model\MedioPago.class
 pe\utp\facturacion\controller\ControllerProducts$5.class
 pe\utp\facturacion\persistence\ConexionBD.class
 pe\utp\facturacion\controller\ControllerProducts$2.class
+pe\utp\facturacion\core\Main.class
 pe\utp\facturacion\persistence\impl\DAODetalleComprobanteImpl.class
 pe\utp\facturacion\model\Departamento.class
 pe\utp\facturacion\persistence\dao\DAODetalleComprobante.class

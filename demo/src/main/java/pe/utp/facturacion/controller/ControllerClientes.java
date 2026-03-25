@@ -25,41 +25,67 @@ import java.util.ArrayList;
 public class ControllerClientes {
 
     // --- ComboBox del primer formulario ---
-    @FXML private ComboBox<TipoDocumento> comboTipoDocumento;
-    @FXML private ComboBox<Departamento> listDepartamento;
-    @FXML private ComboBox<Provincia> listProvincia;
-    @FXML private ComboBox<Distrito> listDistrito;
+    @FXML
+    private ComboBox<TipoDocumento> comboTipoDocumento;
+    @FXML
+    private ComboBox<Departamento> listDepartamento;
+    @FXML
+    private ComboBox<Provincia> listProvincia;
+    @FXML
+    private ComboBox<Distrito> listDistrito;
 
     // --- ComboBox del formulario de filtro ---
-    @FXML private TabPane tabPane;
-    @FXML private ComboBox<TipoDocumento> comboTipoDocumento1;
-    @FXML private ComboBox<Departamento> listDepartamento1;
-    @FXML private ComboBox<Provincia> listProvincia1;
-    @FXML private ComboBox<Distrito> listDistrito1;
+    @FXML
+    private TabPane tabPane;
+    @FXML
+    private ComboBox<TipoDocumento> comboTipoDocumento1;
+    @FXML
+    private ComboBox<Departamento> listDepartamento1;
+    @FXML
+    private ComboBox<Provincia> listProvincia1;
+    @FXML
+    private ComboBox<Distrito> listDistrito1;
 
     // --- Campos de filtrado ---
-    @FXML private TextField txtNumDoc1;
-    @FXML private TextField txtNombres1;
-    @FXML private TextField txtApellidos1;
-    
+    @FXML
+    private TextField txtNumDoc1;
+    @FXML
+    private TextField txtNombres1;
+    @FXML
+    private TextField txtApellidos1;
+
     // --- TableView y sus columnas ---
-    @FXML private TableView<Cliente> tablaClientes;
-    @FXML private TableColumn<Cliente, String> col_nombres;
-    @FXML private TableColumn<Cliente, String> col_apellidos;
-    @FXML private TableColumn<Cliente, String> col_telefono;
-    @FXML private TableColumn<Cliente, String> col_tipoDoc;
-    @FXML private TableColumn<Cliente, String> col_numDoc;
-    @FXML private TableColumn<Cliente, String> col_distrito;
-    @FXML private TableColumn<Cliente, Hyperlink> col_modificar;
+    @FXML
+    private TableView<Cliente> tablaClientes;
+    @FXML
+    private TableColumn<Cliente, String> col_nombres;
+    @FXML
+    private TableColumn<Cliente, String> col_apellidos;
+    @FXML
+    private TableColumn<Cliente, String> col_telefono;
+    @FXML
+    private TableColumn<Cliente, String> col_tipoDoc;
+    @FXML
+    private TableColumn<Cliente, String> col_numDoc;
+    @FXML
+    private TableColumn<Cliente, String> col_distrito;
+    @FXML
+    private TableColumn<Cliente, Hyperlink> col_modificar;
 
     // --- Datos de insercción del cliente ---
 
-    @FXML private TextField txtNombres;
-    @FXML private TextField txtApellidos;
-    @FXML private TextField txtTelefono;
-    @FXML private TextField txtCorreo;
-    @FXML private TextField txtNumDoc;
-    @FXML private TextArea txtDireccion;
+    @FXML
+    private TextField txtNombres;
+    @FXML
+    private TextField txtApellidos;
+    @FXML
+    private TextField txtTelefono;
+    @FXML
+    private TextField txtCorreo;
+    @FXML
+    private TextField txtNumDoc;
+    @FXML
+    private TextArea txtDireccion;
 
     // --- Servicios ---
     private UbigeoService ubigeoService;
@@ -91,7 +117,7 @@ public class ControllerClientes {
             // Listener para el cambio de paneles
             tabPane.getSelectionModel().selectedItemProperty().addListener((obs, oldTab, newTab) -> {
                 if (newTab != null) {
-                    //int index = tabPane.getSelectionModel().getSelectedIndex();
+                    // int index = tabPane.getSelectionModel().getSelectedIndex();
                 }
             });
 
@@ -106,8 +132,7 @@ public class ControllerClientes {
     private void configurarUbigeo(
             ComboBox<Departamento> comboDep,
             ComboBox<Provincia> comboProv,
-            ComboBox<Distrito> comboDist
-    ) {
+            ComboBox<Distrito> comboDist) {
         try {
             // Cargar departamentos
             var departamentos = ubigeoService.cargarDepartamentos();
@@ -135,7 +160,8 @@ public class ControllerClientes {
                 }
             });
         } catch (Exception e) {
-            mostrarError("Error al cargar ubicaciones", "No se pudieron cargar los datos de ubicación.", e.getMessage());
+            mostrarError("Error al cargar ubicaciones", "No se pudieron cargar los datos de ubicación.",
+                    e.getMessage());
         }
     }
 
@@ -189,7 +215,7 @@ public class ControllerClientes {
      */
     @FXML
     public void insertarCliente() {
-        
+
         // Validaciones
         String telefono = txtTelefono.getText();
         if (telefono.length() > 9) {
@@ -226,14 +252,14 @@ public class ControllerClientes {
         cliente.setNumDocumento(numDoc);
         cliente.setIdDistrito(obtenerIdDistritoSeleccionado());
         cliente.setIdDocumento(idDocumento);
-        
+
         try {
             clienteService.insertarCliente(cliente);
             mostrarInfo("Registro exitoso", "El cliente se ha registrado correctamente.");
-            
+
             // Limpiar campos después de inserción exitosa
             limpiarCampos();
-            
+
             // Actualizar la tabla
             cargarDatosTabla();
         } catch (Exception e) {
@@ -282,53 +308,48 @@ public class ControllerClientes {
     private void configurarTabla() {
         // Configurar las columnas
         col_nombres.setCellValueFactory(cellData -> {
-            if (cellData.getValue() == null) return new SimpleStringProperty("");
+            if (cellData.getValue() == null)
+                return new SimpleStringProperty("");
             return new SimpleStringProperty(
-                cellData.getValue().getNombres() != null ? 
-                cellData.getValue().getNombres() : ""
-            );
+                    cellData.getValue().getNombres() != null ? cellData.getValue().getNombres() : "");
         });
-        
+
         col_apellidos.setCellValueFactory(cellData -> {
-            if (cellData.getValue() == null) return new SimpleStringProperty("");
+            if (cellData.getValue() == null)
+                return new SimpleStringProperty("");
             return new SimpleStringProperty(
-                cellData.getValue().getApellidos() != null ? 
-                cellData.getValue().getApellidos() : ""
-            );
+                    cellData.getValue().getApellidos() != null ? cellData.getValue().getApellidos() : "");
         });
-        
+
         col_telefono.setCellValueFactory(cellData -> {
-            if (cellData.getValue() == null) return new SimpleStringProperty("");
+            if (cellData.getValue() == null)
+                return new SimpleStringProperty("");
             return new SimpleStringProperty(
-                cellData.getValue().getTelefono() != null ? 
-                cellData.getValue().getTelefono() : ""
-            );
+                    cellData.getValue().getTelefono() != null ? cellData.getValue().getTelefono() : "");
         });
-        
+
         col_numDoc.setCellValueFactory(cellData -> {
-            if (cellData.getValue() == null) return new SimpleStringProperty("");
+            if (cellData.getValue() == null)
+                return new SimpleStringProperty("");
             return new SimpleStringProperty(
-                cellData.getValue().getNumDocumento() != null ? 
-                cellData.getValue().getNumDocumento() : ""
-            );
+                    cellData.getValue().getNumDocumento() != null ? cellData.getValue().getNumDocumento() : "");
         });
 
         // Configurar columna de tipo documento
         col_tipoDoc.setCellValueFactory(cellData -> {
-            if (cellData.getValue() == null) return new SimpleStringProperty("");
+            if (cellData.getValue() == null)
+                return new SimpleStringProperty("");
             return new SimpleStringProperty(
-                cellData.getValue().getNombreTipoDocumento() != null ? 
-                cellData.getValue().getNombreTipoDocumento() : ""
-            );
+                    cellData.getValue().getNombreTipoDocumento() != null ? cellData.getValue().getNombreTipoDocumento()
+                            : "");
         });
 
         // Configurar columna de distrito
         col_distrito.setCellValueFactory(cellData -> {
-            if (cellData.getValue() == null) return new SimpleStringProperty("");
+            if (cellData.getValue() == null)
+                return new SimpleStringProperty("");
             return new SimpleStringProperty(
-                cellData.getValue().getNombreDistrito() != null ? 
-                cellData.getValue().getNombreDistrito() : ""
-            );
+                    cellData.getValue().getNombreDistrito() != null ? cellData.getValue().getNombreDistrito() : "");
         });
 
         // Configurar columna de modificar
@@ -369,9 +390,9 @@ public class ControllerClientes {
             tablaClientes.setItems(FXCollections.observableArrayList(clientes));
             tablaClientes.refresh(); // Forzar actualización de la vista
         } catch (Exception e) {
-            mostrarError("Error al cargar datos", 
-                        "No se pudieron cargar los datos de los clientes.", 
-                        e.getMessage());
+            mostrarError("Error al cargar datos",
+                    "No se pudieron cargar los datos de los clientes.",
+                    e.getMessage());
         }
     }
 
@@ -407,13 +428,13 @@ public class ControllerClientes {
 
     /**
      * Abre la ventana de modificación de cliente
-    */
-     private void abrirVentanaModificar(Cliente cliente) {
+     */
+    private void abrirVentanaModificar(Cliente cliente) {
         try {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/pe/utp/facturacion/ModCliente.fxml"));
             Parent root = loader.load();
-            
+
             // Obtener el controller de la ventana emergente
             ControllerModCliente controller = loader.getController();
 
@@ -428,7 +449,7 @@ public class ControllerClientes {
             stage.setResizable(false);
             stage.initStyle(StageStyle.UNDECORATED);
 
-            stage.showAndWait();  // Espera a que se cierre
+            stage.showAndWait(); // Espera a que se cierre
 
             // Luego de cerrarse, recargar la tabla
             cargarDatosTabla();
@@ -439,7 +460,6 @@ public class ControllerClientes {
                     e.getMessage());
         }
     }
-
 
     /**
      * Método para filtrar clientes
@@ -488,10 +508,10 @@ public class ControllerClientes {
                     // Filtro por nombres y apellidos
                     numDocumento = null;
                     idDistrito = idDocumento = null;
-                    
+
                     nombres = txtNombres1.getText().trim();
                     apellidos = txtApellidos1.getText().trim();
-                    
+
                     // Si ambos campos están vacíos, mostrar todos los clientes
                     if (nombres.isEmpty() && apellidos.isEmpty()) {
                         cargarDatosTabla();
@@ -503,15 +523,15 @@ public class ControllerClientes {
                     // Filtro por Ubicación
                     numDocumento = nombres = apellidos = null;
                     idDocumento = null;
-                    
+
                     Distrito distrito = listDistrito1.getValue();
-                    
+
                     // Si no hay distrito seleccionado, mostrar todos los clientes
                     if (distrito == null) {
                         cargarDatosTabla();
                         return;
                     }
-                    
+
                     idDistrito = distrito.getIdDistrito().intValue();
                     break;
 
@@ -521,12 +541,11 @@ public class ControllerClientes {
 
             // Aplicar filtros
             List<Cliente> clientesFiltrados = clienteService.filtrarClientes(
-                numDocumento, 
-                nombres, 
-                apellidos, 
-                idDistrito, 
-                idDocumento
-            );
+                    numDocumento,
+                    nombres,
+                    apellidos,
+                    idDistrito,
+                    idDocumento);
 
             // Actualizar la tabla con los resultados
             if (clientesFiltrados.isEmpty()) {
@@ -537,9 +556,9 @@ public class ControllerClientes {
             tablaClientes.refresh();
 
         } catch (Exception e) {
-            mostrarError("Error al filtrar", 
-                "No se pudieron aplicar los filtros especificados.", 
-                e.getMessage());
+            mostrarError("Error al filtrar",
+                    "No se pudieron aplicar los filtros especificados.",
+                    e.getMessage());
         }
     }
 }
