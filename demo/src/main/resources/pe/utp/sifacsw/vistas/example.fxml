@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ComboBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pe.utp.sifacsw.presentacion.controladores.UbigeoController"
+      spacing="10" alignment="CENTER" prefWidth="400" prefHeight="250">
+
+    <ComboBox fx:id="listDepartamento" prefWidth="300"/>
+    <ComboBox fx:id="listProvincia" prefWidth="300"/>
+    <ComboBox fx:id="listDistrito" prefWidth="300"/>
+
+</VBox>
+
+

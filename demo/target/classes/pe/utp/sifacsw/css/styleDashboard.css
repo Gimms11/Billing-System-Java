@@ -1,0 +1,29 @@
+/* =============================
+   SIFAC-SW — Dashboard Styles
+   ============================= */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #dedede;
+
+    -negro: #0F1618;
+    -color-primario: #DC191B;
+    -color-segundario: #b60003;
+    -color-fondo: #dedede;
+    -color-g1: #6B6B6B;
+    -color-g2: #8C8C8C;
+    -color-g3: #BDBDBD;
+    -color-g4: #ececec;
+}
+
+/* Contenedor principal del dashboard */
+.dashboardPane {
+    -fx-background-color: -color-fondo;
+    -fx-padding: 0;
+}
+
+/* WebView contenedor */
+.webViewContainer {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}

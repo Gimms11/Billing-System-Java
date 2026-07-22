@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.utp.sifacsw.presentacion.controladores.DashboardController">
+    <left>  
+        <fx:include source="menu.fxml" />
+    </left>   
+<top>
+      <fx:include source="TopMenu.fxml" />
+   </top>
+   
+
+   <stylesheets>
+      <URL value="@../css/styleMenu.css" />
+      <URL value="@../css/styleTop.css" />
+   </stylesheets>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <WebView fx:id="webView" prefHeight="500.0" prefWidth="710.0" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
+
+

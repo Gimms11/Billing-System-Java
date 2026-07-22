@@ -1,0 +1,119 @@
+/* =============================
+   Variables de marca y tipografía
+   ============================= */
+.root {
+  -fx-font-family: "Segoe UI", Arial, sans-serif;
+
+  -negro: #0f1618;
+  -color-primario: #dc191b;
+  -color-segundario: #b60003;
+  -color-fondo: #dedede;
+
+  -color-g1: #6b6b6b;
+  -color-g2: #8c8c8c;
+  -color-g3: #bdbdbd;
+  -color-g4: #ececec;
+}
+
+/* =============================
+   Barra superior
+   ============================= */
+.topPane {
+  -fx-background-color: -negro;
+  -fx-padding: 0 20 0 20;
+}
+
+
+/* =============================
+   Logo empresa
+   ============================= */
+.iconPane {
+  -fx-background-image: url("../images/logo.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: 100% 100%;
+}
+
+/* =============================
+   Botones de añadir (Factura, Cliente, Producto)
+   ============================= */
+.addBox {
+  -fx-background-color: transparent; /* sin caja */
+  -fx-cursor: hand;
+  -fx-fill: -color-g4;
+  -fx-text-fill: -color-g4;
+}
+
+.addBox:hover .ikonli-font-icon,
+.addBox:hover Label {
+    -fx-fill: -color-primario; /* cambia color icono */
+    -fx-text-fill: -color-segundario; /* cambia color texto */
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+/* =============================
+   Usuario
+   ============================= */
+.userIcon {
+    -fx-background-image: url("../images/niña.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+
+    /* círculo más pequeño */
+    -fx-shape: "M 0 17.5 A 17.5 17.5 0 1 1 35 17.5 A 17.5 17.5 0 1 1 0 17.5";
+    -fx-min-width: 35px;
+    -fx-min-height: 35px;
+    -fx-max-width: 35px;
+    -fx-max-height: 35px;
+
+    -fx-background-radius: 50%; /* por si acaso */
+}
+
+.userBox Label {
+  -fx-text-fill: white;
+}
+
+
+
+
+/* Estilo base para los botones de control */
+.minimizar,
+.salir {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 32px;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}
+
+/* Iconos: color por defecto */
+.minimizar .icon,
+.salir .icon {
+    -fx-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* Hover: minimizar */
+.minimizar:hover {
+    -fx-background-color: #34495e;
+}
+
+/* Hover: cerrar */
+.salir:hover {
+    -fx-background-color: #e74c3c;
+}
+
+/* Presionado */
+.minimizar:pressed,
+.salir:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 1);
+}
+
+/* Opcional: transición suave */
+.minimizar,
+.salir {
+    -fx-transition: -fx-background-color 0.2s ease;
+}

@@ -1,98 +1,98 @@
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerClientes.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerProducts.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\AfectacionProductos.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOMedioPago.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\TipoImpuestos.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\ui\loading\TaskRunner.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\builder\GeneradorPDFDirector.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\NavDashboard.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\builder\AbstractGeneradorPDF.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\ClienteService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerModProductos.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\MedioPago.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\adapter\XMLGeneratorFactory.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Usuario.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\core\Main.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\NavFacturacion.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAODetalleComprobante.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\PermisosNavegacion.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOCategoriaProducto.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Comprobante.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Provincia.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOTipoImpuestos.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\DetalleComprobante.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOTipoDocumentoImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\genPDFService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\adapter\MailTrapEmailAdapter.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOTipoAfectacion.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\json\ManejadorJsonI.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerMenu.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOTipoImpuestosImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\NavConfiguracion.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\NavHistorial.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\XMLService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOUsuario.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerModCliente.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Departamento.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOTipoDocumento.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Cliente.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\TipoDocumento.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOTipoAfectacionImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOCategoriaProductoImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOUbigeoImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOCliente.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\AutenticacioService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\module-info.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Empresa.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\TipoDocumentoService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\GenerarPDF.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOProductoImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerTopMenu.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOMedioPagoImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\ComprobanteService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOFactory.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOTipoComprobante.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAODistritoImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOUsuarioImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\NavegacionStrategy.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\ManejadorService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\ui\loading\LoadingStage.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\adapter\XMLGenerator.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOComprobante.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\DetalleComprobanteService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\json\ManejadorEmpresa.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOClienteImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOUbigeo.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\TipoComprService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\adapter\BoletaXMLGenerator.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\ProductoService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAODetalleComprobanteImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\builder\GeneradorFacturaPDF.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\PostgresDAOFactory.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\UbigeoService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\NavClientes.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOComprobanteImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\core\ControllerFactory.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\json\ManejadorSesion.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\MedioPagoService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerHistorial.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\builder\GeneradorBoletaPDF.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\CategoriaService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerFacturas.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\TipoComprobante.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAOProducto.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\CategoriaProductos.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\core\App.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\builder\GeneradorPDFBuilder.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\adapter\FacturaXMLGenerator.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\strategy\NavProductos.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\ConexionBD.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Producto.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\DashboardController.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\dao\DAODistrito.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\patterns\adapter\EmailSender.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\persistence\impl\DAOTipoComprobanteImpl.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Distrito.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\model\Prueba.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\service\AfectacionService.java
-C:\Users\lordm\Desktop\Proyectos y clases\UTP CICLO 5\CICLO_5_Proyectos\Patrones\Patrones\demo\src\main\java\pe\utp\facturacion\controller\ControllerLogin.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\module-info.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\AfectacionService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\AutenticacioService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\CategoriaService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\ClienteService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\ComprobanteService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\DetalleComprobanteService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\genPDFService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\ManejadorService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\MedioPagoService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\PermisosNavegacion.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\ProductoService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\TipoComprService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\TipoDocumentoService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\UbigeoService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\aplicacion\servicios\XMLService.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\AfectacionProductos.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\CategoriaProductos.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Cliente.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Comprobante.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Departamento.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\DetalleComprobante.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Distrito.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Empresa.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\GenerarPDF.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\MedioPago.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Producto.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Provincia.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Prueba.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\TipoComprobante.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\TipoDocumento.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\TipoImpuestos.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\dominio\modelos\Usuario.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOCategoriaProducto.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOCliente.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOComprobante.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAODetalleComprobante.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAODistrito.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOFactory.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOMedioPago.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOProducto.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOTipoAfectacion.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOTipoComprobante.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOTipoDocumento.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOTipoImpuestos.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOUbigeo.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\dao\DAOUsuario.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\database\ConexionBD.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOCategoriaProductoImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOClienteImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOComprobanteImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAODetalleComprobanteImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAODistritoImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOMedioPagoImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOProductoImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOTipoAfectacionImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOTipoComprobanteImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOTipoDocumentoImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOTipoImpuestosImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOUbigeoImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\DAOUsuarioImpl.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\infraestructura\persistencia\PostgresDAOFactory.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\adapter\BoletaXMLGenerator.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\adapter\EmailSender.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\adapter\FacturaXMLGenerator.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\adapter\MailTrapEmailAdapter.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\adapter\XMLGenerator.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\adapter\XMLGeneratorFactory.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\builder\AbstractGeneradorPDF.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\builder\GeneradorBoletaPDF.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\builder\GeneradorFacturaPDF.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\builder\GeneradorPDFBuilder.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\builder\GeneradorPDFDirector.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\ManejadorEmpresa.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\ManejadorJsonI.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\ManejadorSesion.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\NavClientes.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\NavConfiguracion.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\NavDashboard.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\NavegacionStrategy.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\NavFacturacion.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\NavHistorial.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\patrones\strategy\NavProductos.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\App.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\componentes\ControllerFactory.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\componentes\LoadingStage.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\componentes\TaskRunner.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerClientes.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerFacturas.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerHistorial.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerLogin.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerMenu.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerModCliente.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerModProductos.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerProducts.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\ControllerTopMenu.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\controladores\DashboardController.java
+C:\Users\nalle\OneDrive\Escritorio\Patrones\demo\src\main\java\pe\utp\sifacsw\presentacion\Main.java

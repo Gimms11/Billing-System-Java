@@ -1,4 +1,4 @@
-module pe.utp.facturacion {
+module pe.utp.sifacsw {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
@@ -7,30 +7,34 @@ module pe.utp.facturacion {
     requires itextpdf;
     requires java.desktop;
     requires org.kordamp.ikonli.javafx;
+    requires org.kordamp.ikonli.fontawesome5;
     requires java.mail;
+    requires com.zaxxer.hikari;
 
-    // Controllers - necesarios para JavaFX reflection
-    opens pe.utp.facturacion.controller to javafx.fxml;
+    // Presentacion - Controladores necesarios para JavaFX reflection
+    opens pe.utp.sifacsw.presentacion.controladores to javafx.fxml;
+    exports pe.utp.sifacsw.presentacion.controladores;
 
-    exports pe.utp.facturacion.controller;
+    // Presentacion - Core de la aplicacion
+    opens pe.utp.sifacsw.presentacion to javafx.fxml;
+    exports pe.utp.sifacsw.presentacion;
 
-    // Core - aplicación principal
-    opens pe.utp.facturacion.core to javafx.fxml;
+    // Presentacion - Componentes UI
+    exports pe.utp.sifacsw.presentacion.componentes;
 
-    exports pe.utp.facturacion.core;
+    // Dominio - Modelos de negocio
+    exports pe.utp.sifacsw.dominio.modelos;
 
-    // Model - DTOs para serialización
-    opens pe.utp.facturacion.model to com.google.gson;
+    // Aplicacion - Servicios de logica de negocio
+    exports pe.utp.sifacsw.aplicacion.servicios;
 
-    exports pe.utp.facturacion.model;
+    // Infraestructura - Acceso a datos
+    exports pe.utp.sifacsw.infraestructura.dao;
+    exports pe.utp.sifacsw.infraestructura.persistencia;
+    exports pe.utp.sifacsw.infraestructura.database;
 
-    // Otros paquetes que pueden necesitar exportación
-    exports pe.utp.facturacion.service;
-    exports pe.utp.facturacion.persistence.dao;
-    exports pe.utp.facturacion.persistence.impl;
-    exports pe.utp.facturacion.patterns.builder;
-    exports pe.utp.facturacion.patterns.strategy;
-    exports pe.utp.facturacion.patterns.strategy.json;
-    exports pe.utp.facturacion.patterns.adapter;
-    exports pe.utp.facturacion.ui.loading;
+    // Patrones de Diseno
+    exports pe.utp.sifacsw.patrones.builder;
+    exports pe.utp.sifacsw.patrones.adapter;
+    exports pe.utp.sifacsw.patrones.strategy;
 }

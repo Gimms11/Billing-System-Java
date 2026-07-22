@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
-  <artifactId>demo</artifactId>
+  <groupId>pe.utp.sifacsw</groupId>
+  <artifactId>sifacsw</artifactId>
   <version>1</version>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -74,6 +74,12 @@
         <artifactId>javax.mail</artifactId>
         <version>1.6.2</version> <!-- Última versión con paquete "javax.mail" -->
     </dependency>
+    <!-- HikariCP - Connection Pool de alto rendimiento -->
+    <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>5.1.0</version>
+    </dependency>
   </dependencies>
 
 <build>
@@ -81,7 +87,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
+        <version>3.13.0</version>
         <configuration>
           <release>24</release>
         </configuration>
@@ -95,10 +101,10 @@
           <execution>
             <id>default-cli</id>
             <configuration>
-              <mainClass>pe.utp.facturacion.core.App</mainClass>
+              <mainClass>pe.utp.sifacsw.presentacion.App</mainClass>
               <options>
                 <option>--add-modules</option>
-                <option>org.kordamp.ikonli.javafx,org.kordamp.ikonli.fontawesome5</option>
+                <option>org.kordamp.ikonli.javafx,org.kordamp.ikonli.fontawesome5,com.zaxxer.hikari</option>
               </options>
             </configuration>
           </execution>
@@ -139,7 +145,7 @@
                             <manifest>
                                 <addClasspath>true</addClasspath>
                                 <classpathPrefix>lib/</classpathPrefix>
-                                <mainClass>pe.utp.facturacion.core.Main</mainClass>
+                                <mainClass>pe.utp.sifacsw.presentacion.Main</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
@@ -149,3 +155,4 @@
     </profile>
   </profiles>
 </project>
+
